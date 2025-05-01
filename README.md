@@ -57,6 +57,12 @@ var path = require('path');
 });
 ```
 
+## Running
+```
+node build-sprite.js
+```
+
+this will take all the svg files in the input folder and create the sprite sheet data in the output folder. Then you will need to manually upload all these output files in the CDN in order to get it running.
 ## Installation
 
 Requires [nodejs](http://nodejs.org/) v14.15.0 or greater.
