@@ -20,16 +20,18 @@ This project was forked from `@mapbox/spritezero`.
 3. **Switching to Sharp**: By switching to `sharp`, a more modern and efficient image processing library, we've been able to render more complex and efficient sprites. `sharp` provides better performance, leading to faster sprite generation and reduced resource usage.
 
 
-## Usages
-```
-node build-sprite.js
-```
-
 this will take all the svg files in the input folder and create the sprite sheet data in the output folder. Then you will need to manually upload all these output files in the CDN in order to get it running.
 ## Installation
 
 Requires [nodejs](http://nodejs.org/) v14.15.0 or greater.
 
 ```bash
-$ npm install @jutaz/spritezero
+$ npm install
 ```
+
+
+## Usages
+```
+node build-sprite.js
+```
+

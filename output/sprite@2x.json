@@ -1,1 +1,415 @@
-{"poi-concession":{"width":64,"height":64,"x":0,"y":0,"pixelRatio":2},"poi-restroom":{"width":60,"height":64,"x":64,"y":0,"pixelRatio":2},"poi-shop":{"width":64,"height":64,"x":0,"y":64,"pixelRatio":2},"poi-exit":{"width":60,"height":60,"x":64,"y":64,"pixelRatio":2}}
+{
+  "new-popover-light-taller-1": {
+    "width": 132,
+    "height": 110,
+    "x": 0,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "new-popover-light-taller-2": {
+    "width": 152,
+    "height": 110,
+    "x": 0,
+    "y": 110,
+    "pixelRatio": 2
+  },
+  "new-popover-light-taller-3": {
+    "width": 172,
+    "height": 110,
+    "x": 0,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "new-popover-light-taller-4": {
+    "width": 192,
+    "height": 110,
+    "x": 0,
+    "y": 330,
+    "pixelRatio": 2
+  },
+  "new-popover-light-taller-5": {
+    "width": 212,
+    "height": 110,
+    "x": 132,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "new-popover-light-taller-6": {
+    "width": 232,
+    "height": 110,
+    "x": 152,
+    "y": 110,
+    "pixelRatio": 2
+  },
+  "new-popover-light-taller-7": {
+    "width": 252,
+    "height": 110,
+    "x": 172,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "new-popover-light-taller-8": {
+    "width": 272,
+    "height": 110,
+    "x": 192,
+    "y": 330,
+    "pixelRatio": 2
+  },
+  "new-popover-light-taller-9": {
+    "width": 292,
+    "height": 110,
+    "x": 0,
+    "y": 440,
+    "pixelRatio": 2
+  },
+  "mp-cheapest-dark-90-1": {
+    "width": 212,
+    "height": 108,
+    "x": 292,
+    "y": 440,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-cheapest-1": {
+    "width": 172,
+    "height": 108,
+    "x": 344,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-cheapest-2": {
+    "width": 192,
+    "height": 108,
+    "x": 0,
+    "y": 550,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-cheapest-3": {
+    "width": 212,
+    "height": 108,
+    "x": 192,
+    "y": 550,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-cheapest-4": {
+    "width": 232,
+    "height": 108,
+    "x": 0,
+    "y": 658,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-cheapest-5": {
+    "width": 252,
+    "height": 108,
+    "x": 232,
+    "y": 658,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-cheapest-6": {
+    "width": 272,
+    "height": 108,
+    "x": 0,
+    "y": 766,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-cheapest-7": {
+    "width": 292,
+    "height": 108,
+    "x": 404,
+    "y": 550,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-cheapest-8": {
+    "width": 312,
+    "height": 108,
+    "x": 696,
+    "y": 550,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-cheapest-9": {
+    "width": 332,
+    "height": 108,
+    "x": 484,
+    "y": 658,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-taller-1": {
+    "width": 142,
+    "height": 108,
+    "x": 816,
+    "y": 658,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-taller-2": {
+    "width": 162,
+    "height": 108,
+    "x": 272,
+    "y": 766,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-taller-3": {
+    "width": 182,
+    "height": 108,
+    "x": 434,
+    "y": 766,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-taller-4": {
+    "width": 202,
+    "height": 108,
+    "x": 616,
+    "y": 766,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-taller-5": {
+    "width": 222,
+    "height": 108,
+    "x": 818,
+    "y": 766,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-taller-6": {
+    "width": 242,
+    "height": 108,
+    "x": 516,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-taller-7": {
+    "width": 262,
+    "height": 108,
+    "x": 758,
+    "y": 0,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-taller-8": {
+    "width": 282,
+    "height": 108,
+    "x": 384,
+    "y": 110,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-taller-9": {
+    "width": 302,
+    "height": 108,
+    "x": 666,
+    "y": 110,
+    "pixelRatio": 2
+  },
+  "new-popover-light-1": {
+    "width": 132,
+    "height": 86,
+    "x": 424,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "new-popover-light-2": {
+    "width": 152,
+    "height": 86,
+    "x": 556,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "new-popover-light-3": {
+    "width": 172,
+    "height": 86,
+    "x": 708,
+    "y": 220,
+    "pixelRatio": 2
+  },
+  "new-popover-light-4": {
+    "width": 192,
+    "height": 86,
+    "x": 464,
+    "y": 330,
+    "pixelRatio": 2
+  },
+  "new-popover-light-5": {
+    "width": 212,
+    "height": 86,
+    "x": 656,
+    "y": 330,
+    "pixelRatio": 2
+  },
+  "new-popover-light-6": {
+    "width": 232,
+    "height": 86,
+    "x": 504,
+    "y": 440,
+    "pixelRatio": 2
+  },
+  "new-popover-light-7": {
+    "width": 252,
+    "height": 86,
+    "x": 736,
+    "y": 440,
+    "pixelRatio": 2
+  },
+  "new-popover-light-8": {
+    "width": 272,
+    "height": 86,
+    "x": 0,
+    "y": 874,
+    "pixelRatio": 2
+  },
+  "new-popover-light-9": {
+    "width": 292,
+    "height": 86,
+    "x": 272,
+    "y": 874,
+    "pixelRatio": 2
+  },
+  "new-popover-light-cheapest-1": {
+    "width": 152,
+    "height": 86,
+    "x": 564,
+    "y": 874,
+    "pixelRatio": 2
+  },
+  "new-popover-light-cheapest-2": {
+    "width": 172,
+    "height": 86,
+    "x": 716,
+    "y": 874,
+    "pixelRatio": 2
+  },
+  "new-popover-light-cheapest-3": {
+    "width": 192,
+    "height": 86,
+    "x": 0,
+    "y": 960,
+    "pixelRatio": 2
+  },
+  "new-popover-light-cheapest-4": {
+    "width": 212,
+    "height": 86,
+    "x": 192,
+    "y": 960,
+    "pixelRatio": 2
+  },
+  "new-popover-light-cheapest-5": {
+    "width": 232,
+    "height": 86,
+    "x": 404,
+    "y": 960,
+    "pixelRatio": 2
+  },
+  "new-popover-light-cheapest-6": {
+    "width": 252,
+    "height": 86,
+    "x": 636,
+    "y": 960,
+    "pixelRatio": 2
+  },
+  "new-popover-light-cheapest-7": {
+    "width": 272,
+    "height": 86,
+    "x": 0,
+    "y": 1046,
+    "pixelRatio": 2
+  },
+  "new-popover-light-cheapest-8": {
+    "width": 292,
+    "height": 86,
+    "x": 272,
+    "y": 1046,
+    "pixelRatio": 2
+  },
+  "new-popover-light-cheapest-9": {
+    "width": 312,
+    "height": 86,
+    "x": 564,
+    "y": 1046,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-1": {
+    "width": 142,
+    "height": 84,
+    "x": 888,
+    "y": 874,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-2": {
+    "width": 162,
+    "height": 84,
+    "x": 888,
+    "y": 960,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-3": {
+    "width": 182,
+    "height": 84,
+    "x": 868,
+    "y": 330,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-4": {
+    "width": 202,
+    "height": 84,
+    "x": 0,
+    "y": 1132,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-5": {
+    "width": 222,
+    "height": 84,
+    "x": 202,
+    "y": 1132,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-6": {
+    "width": 242,
+    "height": 84,
+    "x": 424,
+    "y": 1132,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-7": {
+    "width": 262,
+    "height": 84,
+    "x": 666,
+    "y": 1132,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-8": {
+    "width": 282,
+    "height": 84,
+    "x": 0,
+    "y": 1216,
+    "pixelRatio": 2
+  },
+  "new-popover-dark-9": {
+    "width": 302,
+    "height": 84,
+    "x": 282,
+    "y": 1216,
+    "pixelRatio": 2
+  },
+  "poi-concession": {
+    "width": 64,
+    "height": 64,
+    "x": 928,
+    "y": 1132,
+    "pixelRatio": 2
+  },
+  "poi-restroom": {
+    "width": 60,
+    "height": 64,
+    "x": 992,
+    "y": 1132,
+    "pixelRatio": 2
+  },
+  "poi-shop": {
+    "width": 64,
+    "height": 64,
+    "x": 584,
+    "y": 1216,
+    "pixelRatio": 2
+  },
+  "poi-exit": {
+    "width": 60,
+    "height": 60,
+    "x": 648,
+    "y": 1216,
+    "pixelRatio": 2
+  }
+}
