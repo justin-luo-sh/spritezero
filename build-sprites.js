@@ -1,7 +1,6 @@
-#!/usr/bin/env node
 
-// Load .env into process.env
-require('dotenv').config();   // npm install dotenv
+// file share path is in the .env file
+require('dotenv').config(); 
 
 const spritezero = require('@jutaz/spritezero');
 const fs        = require('fs');
