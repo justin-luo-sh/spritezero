@@ -51,7 +51,7 @@ async function main() {
 
   // 3) GENERATE + COPY
   for (const pxRatio of [1, 2, 4]) {
-    const spriteId = pxRatio > 1 ? `sprite@${pxRatio}x` : 'sprite';
+    const spriteId = pxRatio > 1 ? `markers@${pxRatio}x` : 'markers';
     const jsonPath = path.join(outputDir, `${spriteId}.json`);
     const pngPath  = path.join(outputDir, `${spriteId}.png`);
 
