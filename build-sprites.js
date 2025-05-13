@@ -1,38 +1,85 @@
-var spritezero = require('@jutaz/spritezero');
-var fs = require('fs');
-var glob = require('glob');
-var path = require('path');
 
-[1, 2, 4].forEach(function(pxRatio) {
-    var svgs = glob.sync(path.resolve(path.join(__dirname, 'input/*.svg')))
-        .map(function(f) {
-            return {
-                svg: fs.readFileSync(f),
-                id: path.basename(f).replace('.svg', '')
-            };
-        });
+// file share path is in the .env file
+require('dotenv').config(); 
 
-        let spriteId = 'sprite';
-        if(pxRatio > 1) {
-            spriteId = `sprite@${pxRatio}x`
-        }
-    var pngPath = path.resolve(path.join(__dirname, 'output/' + spriteId + '.png'));
-    var jsonPath = path.resolve(path.join(__dirname, 'output/' + spriteId +'.json'));
+const spritezero = require('@jutaz/spritezero');
+const fs        = require('fs');
+const glob      = require('glob');
+const path      = require('path');
 
-    // Pass `true` in the layout parameter to generate a data layout
-    // suitable for exporting to a JSON sprite manifest file.
-    spritezero.generateLayout({ imgs: svgs, pixelRatio: pxRatio, format: true }, function(err, dataLayout) {
-        if (err) return;
-        fs.writeFileSync(jsonPath, JSON.stringify(dataLayout));
+// Promisify spritezero callbacks
+function generateLayout(imgs, pixelRatio, format) {
+  return new Promise((resolve, reject) => {
+    spritezero.generateLayout({ imgs, pixelRatio, format }, (err, layout) => {
+      if (err) reject(err);
+      else resolve(layout);
     });
-
-    // Pass `false` in the layout parameter to generate an image layout
-    // suitable for exporting to a PNG sprite image file.
-    spritezero.generateLayout({ imgs: svgs, pixelRatio: pxRatio, format: false }, function(err, imageLayout) {
-        spritezero.generateImage(imageLayout, function(err, image) {
-            if (err) return;
-            fs.writeFileSync(pngPath, image);
-        });
+  });
+}
+function generateImage(layout) {
+  return new Promise((resolve, reject) => {
+    spritezero.generateImage(layout, (err, image) => {
+      if (err) reject(err);
+      else resolve(image);
     });
+  });
+}
 
+async function main() {
+  // 1) CONFIG
+  const UPLOAD_DIR = process.env.SHARE_NAME;
+  if (!UPLOAD_DIR) {
+    throw new Error('Please set SHARE_NAME in your .env to your mount path');
+  }
+  // **Do not create** if missing — error out instead
+  if (!fs.existsSync(UPLOAD_DIR) || !fs.statSync(UPLOAD_DIR).isDirectory()) {
+    throw new Error(`Upload directory does not exist: ${UPLOAD_DIR}`);
+  }
+
+  const inputDir  = path.resolve(__dirname, 'input');
+  const outputDir = path.resolve(__dirname, 'output');
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+  }
+
+  // 2) LOAD SVGs
+  const svgFiles = glob.sync(path.join(inputDir, '*.svg'));
+  const svgs = svgFiles.map(file => ({
+    svg: fs.readFileSync(file),
+    id:  path.basename(file, '.svg'),
+  }));
+
+  // 3) GENERATE + COPY
+  for (const pxRatio of [1, 2, 4]) {
+    const spriteId = pxRatio > 1 ? `markers@${pxRatio}x` : 'markers';
+    const jsonPath = path.join(outputDir, `${spriteId}.json`);
+    const pngPath  = path.join(outputDir, `${spriteId}.png`);
+
+    // a) JSON manifest
+    const dataLayout = await generateLayout(svgs, pxRatio, true);
+    fs.writeFileSync(jsonPath, JSON.stringify(dataLayout, null, 2));
+    console.log(`✎ Wrote ${jsonPath}`);
+
+    // b) PNG image
+    const imageLayout  = await generateLayout(svgs, pxRatio, false);
+    const imageBuffer  = await generateImage(imageLayout);
+    fs.writeFileSync(pngPath, imageBuffer);
+    console.log(`✎ Wrote ${pngPath}`);
+
+    const destJson = path.join(UPLOAD_DIR, path.basename(jsonPath));
+    const destPng  = path.join(UPLOAD_DIR, path.basename(pngPath));
+
+    fs.copyFileSync(jsonPath, destJson);
+    console.log(`✔ Copied ${path.basename(jsonPath)} → ${UPLOAD_DIR}`);
+
+    fs.copyFileSync(pngPath, destPng);
+    console.log(`✔ Copied ${path.basename(pngPath)} → ${UPLOAD_DIR}`);
+  }
+
+  console.log('✅ All sprites generated and deployed locally!');
+}
+
+main().catch(err => {
+  console.error(err.message);
+  process.exit(1);
 });

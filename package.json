@@ -65,8 +65,10 @@
     "json"
   ],
   "dependencies": {
+    "@azure/storage-file-share": "^12.27.0",
     "@jutaz/spritezero": "^9.0.0",
     "@mapbox/shelf-pack": "~3.0.0",
+    "dotenv": "^16.5.0",
     "json-stable-stringify": "^1.0.1",
     "queue-async": "^1.2.1",
     "sharp": "^0.31.3",
