@@ -29,9 +29,24 @@ Requires [nodejs](http://nodejs.org/) v14.15.0 or greater.
 $ npm install
 ```
 
+## IMPORTANT: PLEASE READ:
+1. the input folder should contain all the existing svgs + any new ones you want to add
+2. the output folder should contain all the sprites to be used, look for all files marked as "markers.png/json"
+3. running the script should generate these sprits locally as well as update them to the target QA CDN path in your .env file, testing on prod will require a manual resource sync.
+4. When adding a new sprite for experimentation, please bump the version in the .env folder like v2,v3 so it doesn't override the existing folder.
 
 ## Usages
+
 ```
 node build-sprite.js
 ```
+
+
+## Testing:
+on the Website side:  in initFunctions.js, change the customSpritePath to match your upload directory. 
+
+
+
+
+
 
