@@ -881,32 +881,60 @@
     "y": 55,
     "pixelRatio": 1
   },
-  "poi-concession": {
+  "new-poi-concession": {
     "width": 32,
     "height": 32,
     "x": 1018,
     "y": 383,
     "pixelRatio": 1
   },
-  "poi-restroom": {
+  "new-poi-restroom": {
     "width": 30,
     "height": 32,
     "x": 988,
     "y": 437,
     "pixelRatio": 1
   },
-  "poi-shop": {
-    "width": 32,
+  "new-poi-shop": {
+    "width": 30,
     "height": 32,
     "x": 1018,
     "y": 437,
     "pixelRatio": 1
   },
+  "poi-concession": {
+    "width": 32,
+    "height": 32,
+    "x": 1014,
+    "y": 491,
+    "pixelRatio": 1
+  },
+  "poi-restroom": {
+    "width": 30,
+    "height": 32,
+    "x": 1024,
+    "y": 545,
+    "pixelRatio": 1
+  },
+  "poi-shop": {
+    "width": 32,
+    "height": 32,
+    "x": 1023,
+    "y": 599,
+    "pixelRatio": 1
+  },
+  "new-poi-exit": {
+    "width": 30,
+    "height": 30,
+    "x": 1018,
+    "y": 707,
+    "pixelRatio": 1
+  },
   "poi-exit": {
     "width": 30,
     "height": 30,
-    "x": 1014,
-    "y": 491,
+    "x": 1020,
+    "y": 0,
     "pixelRatio": 1
   }
 }
